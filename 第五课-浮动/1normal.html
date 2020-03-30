@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            /* display: inline-block;虽然可以让div并排，但会出现空白 */
+            float: left;
+            margin-left: 20px;
+        }
+
+        .box1 {
+            background-color: green;
+        }
+
+        .box2 {
+            background-color: yellow;
+        }
+
+        .box3 {
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <!--标准流 默认状态
+        css元素的划分（块级元素、行内元素）和特征 都是在标准流的前提下
+     -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .demo1 {
+            bottom: 100px;
+        }
+
+        .demo2 {
+            margin-top: 100px;
+            background-color: green;
+
+        }
+
+        .demo3 {
+            margin-top: 80px;
+            /*解决父子元素margin塌陷方法：
+            1 给父亲加border
+            2.给父亲加padding
+            3.给父亲加overflow hidden*/
+            /* padding:1px; */
+            /* overflow: hidden; */
+            /* border: 1px solid transparent; */
+        }
+
+        .demo3>p {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3">
+        <p>儿子</p>
+    </div>
+</body>
+
+</html>

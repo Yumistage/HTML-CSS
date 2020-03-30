@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*重置浏览器的默认样式*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box,
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin-left: 20px;
+            margin-top: 100px; */
+            /* margin: 20px 30px 20px 30pxs; */
+            margin-top: 100px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            margin: auto;
+        }
+
+        .box2 {
+            /*可以让文本行内块元素水平居中*/
+            text-align: center;
+            /*margin-left margtin-right auto 水平居中 块级元素*/
+            margin: 100px auto 0;
+        }
+
+        /*对行内元素 margin top bottom无效 left right有效果
+           auto auto 无法设置成居中*/
+
+           .box4{
+               text-align: center;
+               color: green;
+           }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="box2">
+        文本
+        <input type="button" value="">
+    </div>
+    <div class="box3">111</div>
+    <div class="box4"><span>222</span></div>
+</body>
+
+</html>
