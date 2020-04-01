@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*相对定位的元素：
+          1相对于自己标准流的位置进行局部的位置微调
+          2相对定位元素还是标准流元素
+        */
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*相对定位*/
+            position: relative;
+            /*向对起始位置向右启动*/
+            left: 20px;
+            top: 60px;
+        }
+
+        span {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <span>123</span>
+</body>
+
+</html>

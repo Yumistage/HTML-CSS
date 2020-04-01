@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        浮动的元素是不能撑开父亲 如果父亲没有设置高度 则父亲的高度的0
+        浮动往往会对后面元素布局造成影响，所以需要清除浮动造成的影响
+        方法1   给浮动元素的父亲增加一个高度 缺点：页面不灵活 
+                儿子的高度不确定，如果写死，会造成内容缺失
+        方法2   clear：left  clear:right clear：both
+               在浮动元素之后增加一个块级元素 设置clear属性为both 
+               缺点：多了一个结构 影响页面的结构 
+        方法3  Overflow：hidden Overflow：auto Overflow：scroll
+                给浮动元素的父亲增加该元素   
+
+        方法4  使用after 伪元素清除浮动   
+
+        方法5  双伪元素消除浮动 前后增加伪元素 display:table
+               after中增加clear：both
+        */
+
+
+        /*
+        方法1：
+         .box1 {
+            height: 260px;
+        } 
+        */
+
+        /* 方法2：
+        .clear{
+            用于块级元素
+        clear: both;
+        }
+        */
+
+        /*方法3：出发块级元素显示 
+        .box1 {
+            overflow: hidden;
+        } */
+
+        .box1>div {
+            width: 200px;
+            height: 200px;
+            float: left;
+        }
+
+        .son1 {
+            background-color: blue;
+        }
+
+        .box1>.son2 {
+            height: 260px;
+            background-color: pink;
+        }
+
+        .box2 {
+            width: 600px;
+            height: 300px;
+            background-color: green;
+        }
+
+        /*
+        方法4 
+        .clearfix:after {
+            content: '';
+            转成块元素
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+            这个类所属的容器的末尾增加一个伪元素
+        } 
+        
+        IE 6,7
+        .clearfix{
+            *zoom:1
+        }        
+        */
+
+
+        .clearfix:before .clearfix:after {
+            content: '';
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1 clearfix">
+        <div class="son1"></div>
+        <div class="son2"></div>
+        <!--方法2 <p class="clear"></p> -->
+    </div>
+    <div class="box2"></div>
+</body>
+
+</html>
