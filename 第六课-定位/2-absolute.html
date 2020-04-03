@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*
+            position:absolute
+          1 一个绝对定位元素是body的儿子，此时参考点就是body左上角
+          2 在工程上，一般采用子绝父相，也就是儿子设置成绝对定位
+            父亲设置相对定位，父亲设置相对定位，儿子绝对定位的参考点就是
+            以最近的，带有定位的祖先作为参考
+        */
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .box1 {
+            margin: 100px;
+        }
+
+        .box2 {
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+        }
+
+        .box3>p {
+            width: 100px;
+            height: 80px;
+            background-color: yellow;
+            position: absolute;
+            /*居中方法1
+            top: 60px;
+            left: 50px; */
+            top: 50%;
+            left: 50%;
+            margin-top: -40px;
+            margin-left: -50px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+
+    <div class="box3">
+        <p>文本</p>
+    </div>
+
+</body>
+
+</html>

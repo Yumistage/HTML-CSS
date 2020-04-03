@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        固定定位的元素与父级没关系
+        固定定位的参考点是浏览器可视窗口：一般的小广告
+         */
+        body{
+            height: 3000px;
+        }
+
+        .box {
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box>p {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            /*固定定位*/
+            position: fixed;
+            bottom: 10px;
+            left: 50px;
+        }
+
+        .goback {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            position: fixed;
+            right: 18px;
+            bottom:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>
+        </p>
+    </div>
+    <div class="goback">⬆</div>
+</body>
+
+</html>

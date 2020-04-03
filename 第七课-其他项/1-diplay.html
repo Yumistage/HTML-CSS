@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*当元素设置成display：none 元素隐藏，同时位置不保留
+         display：block 设置成块，同时显示出来
+
+         display:none 和visibility：hidden 都是隐藏 但后者保留位置
+         */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+        }
+
+        .box1 {
+            /* display: none;
+            display: block; */
+            visibility: hidden;
+        }
+
+        .box2 {
+            background-color: orange;
+        }
+
+        .box3 {
+            background-color: pink;
+            /*超出内容隐藏*/
+            overflow: hidden;
+            /*出现滚动条
+            overflow: scroll;
+            overflow: auto;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3">吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，吃鸡好玩得很，你来一局，
+        吃鸡好玩得很，你来一局，
+    </div>
+</body>
+
+</html>
