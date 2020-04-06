@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .phone {
+            width: 48px;
+            height:30px;
+            background: url(TB.png) no-repeat;
+        }
+
+        .animal {
+            width: 48px;
+            height: 30px;
+            background: url(TB.png) no-repeat 0 -87px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--精灵图
+      ---css sprite 
+      1.把很多的小背景图整合到一张大图
+      2.当网页中图像过多的情况下，服务器频繁处理图片的请求，此时
+        用精灵图可以减少图片请求次数 从而提高页面的加载速度
+      3.   
+    -->
+    <div class="phone"></div>
+    <div class="animal"></div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;           
+        }
+
+        /* img {
+            转成块元素，取消块和行内块中间的缝隙
+            display: block;
+        } */
+        .two {
+            /*bottom 底线对齐*/
+            vertical-align: middle;
+        }
+
+        .three {
+            /*top 顶线对齐*/
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <div> <img src="qq.png" width="180" alt="">QQ官网 </div>
+    <div><img src="qq.png" class="two" width="180" alt="">QQ官网</div>
+    <div><img src="qq.png" class="three" width="180" alt="">QQ官网</div>
+</body>
+
+</html>
