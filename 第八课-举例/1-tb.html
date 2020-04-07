@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div {
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .arrow_l {
+            left: 0px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .arrow_r {
+            right: 0px;
+            text-align: right;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .arrow_r,
+        .arrow_l {
+            position: absolute;
+            top: 50%;
+            margin-top: -15px;
+            height: 20px;
+            height: 30px;
+            line-height: 30px;
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, .1);
+            color: #fff;
+            font-size: 20px;
+            display: none;
+        }
+
+        .taobao:hover .arrow_l,
+        .taobao:hover .arrow_r {
+            display: block;
+        }
+
+        .taobao .circle {
+            position: absolute;
+            bottom: 10px;
+            width: 70px;
+            height: 13px;
+            left: 50%;
+            margin-left: -35px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .taobao .circle li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: white;
+            margin: 3px;
+        }
+
+        .taobao .circle li.on {
+            background-color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="taobao">
+
+        <img src="picture.jpg" alt="">
+        <a href="#" class="arrow_l">⬅</a>
+        <a href="#" class="arrow_r">➡</a>
+        <ul class="circle">
+            <li class="on"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
