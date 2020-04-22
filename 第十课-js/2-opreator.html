@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--双目运算符 
+    表达式1？表达式2：表达式3
+    -->
+    <!-- <script>
+        var res = 10 == 5 ? 10 : 5;
+        console.log(res);
+    </script> -->
+
+    <!--if嵌套-->
+    <script>
+        //让用户输入一个年份，判断是否是闰年
+        var year = parseInt(prompt("请输入一个年份"));
+        if (year <= 0) {
+            console.log("输入不合法");
+        } else {
+            if ((year % 400 === 0) || ((year % 4) === 0) && ((year % 100) !== 0)) {
+                console.log(year + "是闰年");
+            } else {
+                console.log(year + "不是闰年");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

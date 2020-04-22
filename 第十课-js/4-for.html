@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //在控制台输入100句js从入门到放弃
+        //表1 变量初始化 表2 循环条件 表3 循环变量改变
+        // for (var i = 0; i <= 99; i++) {
+        //     console.log('js从入门到放弃');
+        // }
+        /*
+        for循环过程
+        1.执行表1；
+        2.执行表2 假如为真，执行第三步
+        3.执行大括号里的循环体
+        4.执行表3
+        5.回到第2步
+
+        */
+        // var sum = 0;
+        // for (var index = 0; index <= 100; index++) {
+        //     sum += index;
+        // }
+        // console.log(sum);
+        // var sum = 1;
+        // for (var k = 2; k <= 5; k++) {
+        //     sum = sum * k;
+        // }
+        // console.log(sum);
+        var sum = 0;
+        for (var index = 1; index <= 100; index++) {
+            if (index % 2 === 0) {
+                sum = sum - index;
+            } else {
+                sum = sum + index;
+            }
+        }
+        console.log(sum);
+    </script>
+</body>
+
+</html>

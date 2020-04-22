@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 顺序结构
+        // 选择结构（ 分支）  if switch
+        // 循环结构（ 重复结构）
+
+        /*
+        if (条件表达式){
+            条件成立时需要执行的语句
+        }
+         */
+
+        /*
+        if else
+        if(条件表达式){
+            条件成立时，执行语句
+        }
+        els
+        {
+            条件不成立时，执行语句
+        }
+        */
+        // var age = 8;
+        // if (age >= 18) {
+        //     console.log("您已成年");
+        //     console.log("请注意公共场合的言行");
+        // } else {
+        //     console.log("未成年不能入内");
+        // }
+        // console.log('end');
+
+        var score = prompt('请输入你的成绩');
+        score = Number(score);
+        console.log(typeof score);
+        if (score >= 90) {
+            console.log('great,keep on');
+        } else if (score >= 80) {
+            console.log('good');
+        } else if (score >= 60) {
+            console.log('soso');
+        } else {
+            console.log('bad');
+        }
+        console.log('good good study');
+    </script>
+</body>
+
+</html>

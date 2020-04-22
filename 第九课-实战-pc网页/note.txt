@@ -1,0 +1,14 @@
+##项目的准备
+1.目录结构
+2.http://www.bitbug.net 制作ico图标
+
+3. 开发流程
+UI--------psd/png/gif
+前端------web
+后端------配合
+运维------上线运维
+
+4.tkd
+title
+keyword
+description

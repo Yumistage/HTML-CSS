@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //0 周日 1 周一 2 周二 3周三 4 周四  5周五  6周六
+        //switch 是严格匹配 相当于===
+        var num = Number(prompt('请输入日期')) % 7;
+
+        switch (num) {
+            case 0:
+                console.log('该日子是周日');
+                break;
+            case 1:
+                console.log('该日子是周一');
+                break
+            case 2:
+                console.log('该日子是周二');
+                break;
+            case 3:
+                console.log('该日子是周三');
+                break
+            case 4:
+                console.log('该日子是周四');
+                break;
+            case 5:
+                console.log('该日子是周五');
+                break
+            case 6:
+                console.log('该日子是周六');
+                break;
+            default:
+                console.log('出现异常数据');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/*浏览器重置样式*/
+
+* {
+    padding: 0px;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: 0px;
+    vertical-align: middle;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button,
+input {
+    outline: none;
+}
+
+body {
+    background-color: #fff;
+    color: #666;
+    font: 14px/1.5 "Hiragino Sans GB", "Microsoft YaHei", "宋体", Arial, Tahoma, Helvetica, Geneva, sans-serif;
+}
