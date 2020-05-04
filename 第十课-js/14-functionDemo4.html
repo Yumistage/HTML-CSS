@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //function定义的函数可以先定义后调用，也可以先调用后定义
+        //预解析过程 会将定义函数调整到最前面 匿名函数必须定义在前，调用在后
+        /*
+        js代码执行  1预解析  2执行
+        预解析过程中，会把函数或者变量的声明提升  赋值不提升
+        */
+
+        console.log(sum);
+        var sum = 10;
+
+        fn();
+
+        function fn() {
+            console.log('Hi');
+        }
+
+        var fn2 = function () {
+            alert('爱全栈，爱生活');
+        }
+        fn2();
+
+    </script>
+</body>
+
+</html>

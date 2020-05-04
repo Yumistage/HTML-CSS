@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var arr = [10, 23, 43, 54, 38, 70];
+        var arr2 = [];
+        //indexOf() lastIndexOf()
+        var res = arr.indexOf(10);
+        console.log(res);
+        res = arr.lastIndexOf(38);
+        console.log(res);
+
+
+        //去重
+        function noRepeat(arr) {
+            var newArr = [];
+            for (var i = 0; i < arr.length; i++) {
+                if (-1 == newArr.indexOf(arr[i])) {
+                    newArr.push(arr[i]);
+                }
+            }
+            return newArr;
+        }
+        arr = [10, 10, 20, 20, 10];
+        arr2 = noRepeat(arr);
+
+        //foreach
+        arr2.forEach(function (item, index) {
+            //item每个元素
+            //index item对应的下标
+            console.log(item);
+            console.log(index);
+        });
+
+    //concat join reverse some every map filter reduce sort
+
+    </script>
+</body>
+
+</html>

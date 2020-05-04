@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Date构造函数
+        var now = new Date();
+        var endTime = new Date('2022/1/1');
+        var week = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        //日期方法和属性
+        console.log(now.getFullYear());
+        console.log(now.getMonth());//月份 默认从0开始 0表示1月
+        console.log(now.getDate());
+        console.log(week[now.getDay()]);//周日，出来的数值是0，值是0-6；
+        console.log(now.getHours());
+        console.log(now.getMinutes());
+        console.log(now.getSeconds());
+        console.log(now.getMilliseconds());
+
+        //总毫秒数 1970.1.1-->指定时间
+        console.log(now.getTime());
+        console.log(now.valueOf());
+         
+        
+
+        //倒计时：当前时间和目标时间的毫秒数差值，将差值换算成时分秒
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

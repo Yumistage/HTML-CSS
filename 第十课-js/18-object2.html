@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var object = new Object();
+        object.age = 31;
+        object.sex = '女';
+        object.name = 'lucy';
+        console.log(object);
+        var object2 = {
+            name: 'zs',
+            age: 31,
+            run: function () {
+                console.log('running');
+            }
+        };
+        object2.sex = '男';
+        console.log(object2);
+
+        console.log('.........................');
+
+        //访问对象的每一个属性 for in
+        for (var k in object2) {
+            //   console.log(k);//在数组中，k表示下标，在对象中表示key
+            //   console.log(object[k]);
+            if (object2[k] instanceof Function) {
+                object2[k]();
+            }
+            else {
+                //  console.log(object[k]);
+            }
+        }
+    </script>
+</body>
+
+</html>

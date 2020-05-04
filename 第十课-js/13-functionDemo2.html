@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getSum(num1, num2) {
+            if (arguments.length == arguments.callee.length) {
+                return num1 + num2;
+            }
+            else {
+                alert('参数个数不匹配');
+            }
+
+        }
+
+        var res = getSum(10, 20);
+        console.log(res);
+        res = getSum(19, 12, 12);
+        console.log(res);//返回函数无法return 默认返回undefined
+
+        //arguments 函数内置的一个对象 接收了所有的实参
+        function getSum2() {
+            var sum = 0;
+            for (var i = 0; i < arguments.length; i++) {
+                sum += arguments[i];
+            }
+            return sum;
+        }
+        console.log(getSum2(10));
+        console.log(getSum2(10, 10, 10));
+        console.log(getSum2(10, 10, '10'));
+    </script>
+</body>
+
+</html>
